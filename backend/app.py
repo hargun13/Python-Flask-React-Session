@@ -55,7 +55,7 @@ def insert_data_to_mysql():
     db = pymysql.connect(
         host='localhost',
         user='root',
-        password='Kh@ls@13032003',
+        password='yourpassword',
         database='trial'
     )
     cursor = db.cursor()
