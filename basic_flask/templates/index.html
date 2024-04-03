@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Blog</title>
+</head>
+<body>
+    <h1>Welcome to our Flask Blog</h1>
+    <form action="/submit" method="post">
+        <textarea name="post_content" cols="30" rows="5"></textarea>
+        <br>
+        <button type="submit">Submit Post</button>
+    </form>
+    <hr>
+    <h2>Recent Posts</h2>
+    <ul>
+        {% for post in posts %}
+            <li>{{ post }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
