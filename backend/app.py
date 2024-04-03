@@ -6,16 +6,6 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# # Configure MySQL connection
-# db = pymysql.connect(
-#     host='localhost',
-#     user='root',
-#     password='Kh@ls@13032003',
-#     database='trial'
-# )
-
-# # Create a cursor object to execute SQL queries
-# cursor = db.cursor()
 
 @app.route('/get_value', methods=['GET'])
 def get_value_from_mysql():
@@ -23,7 +13,7 @@ def get_value_from_mysql():
     db = pymysql.connect(
         host='localhost',
         user='root',
-        password='Kh@ls@13032003',
+        password='yourpassword',
         database='trial'
     )
     cursor = db.cursor()
