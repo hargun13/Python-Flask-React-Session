@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask MySQL Example</title>
+</head>
+<body>
+    <h1>Flask MySQL Example</h1>
+
+    <h2>Get Value</h2>
+    <button onclick="getValue()">Get Value</button>
+    <div id="getValueOutput"></div>
+
+    <h2>Insert Data</h2>
+    <button onclick="insertData()">Insert Data</button>
+    <div id="insertDataOutput"></div>
+
+    <script>
+        function getValue() {
+            fetch('http://127.0.0.1:5000/get_value')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('getValueOutput').innerText = JSON.stringify(data);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function insertData() {
+            fetch('http://127.0.0.1:5000/insert_data', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    username: 'rohit',
+                    password: 'rohitkapassword',
+                    email: 'rohit@gmail.com'
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('insertDataOutput').innerText = JSON.stringify(data);
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
