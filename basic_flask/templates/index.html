@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask Blog</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to the CSS file -->
 </head>
 <body>
     <h1>Welcome to our Flask Blog</h1>
-    <form action="/submit" method="post">
-        <textarea name="post_content" cols="30" rows="5"></textarea>
+    <form action="/submit" method="post" style="text-align: center;"> <!-- Center the form content -->
+        <textarea name="post_content" cols="0" rows="2"></textarea>
         <br>
         <button type="submit">Submit Post</button>
     </form>

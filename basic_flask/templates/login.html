@@ -4,6 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        }
+        input[type="text"],
+        input[type="password"],
+        button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            background-color: #4caf50; /* Green color for the button */
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049; /* Darker green color on hover */
+        }
+    </style>
 </head>
 <body>
     <h1>Login</h1>
@@ -11,8 +47,8 @@
         <p>{{ message }}</p>
     {% endif %}
     <form action="/login" method="post">
-        <input type="text" name="username" placeholder="Username"><br>
-        <input type="password" name="password" placeholder="Password"><br>
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
         <button type="submit">Login</button>
     </form>
 </body>

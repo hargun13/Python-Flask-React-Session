@@ -6,7 +6,6 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-
 @app.route('/get_value', methods=['GET'])
 def get_value_from_mysql():
 
@@ -36,7 +35,7 @@ def get_value_from_mysql():
         cursor.close()
         db.close()
 
-username = 'hargun'
+username = 'new'
 password = 'password'
 email = 'hargun@example.com'
 

@@ -1,0 +1,75 @@
+index.css
+/* index.css */
+
+body, h1, form, hr, h2, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    text-align: center; /* Center the form content */
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    max-width: 300px; /* Set a maximum width for the textarea */
+    height: 80px; /* Set a fixed height for the textarea */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+  }
+  
+  button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 120px; /* Set a fixed width for the button */
+  }
+  
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  hr {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    background-color: #ffffff; /* White background color for each post */
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  }
