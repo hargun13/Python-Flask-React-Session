@@ -19,11 +19,6 @@ const App = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-                username: 'rohit',
-                password: 'rohitkapassword',
-                email: 'rohit@gmail.com'
-            }),
         })
         .then(response => response.json())
         .then(data => {
